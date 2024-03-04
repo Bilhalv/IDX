@@ -612,20 +612,36 @@ video {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-48 {
-  height: 12rem;
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-1\/2 {
   height: 50%;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-full {
@@ -636,24 +652,8 @@ video {
   width: 2.5rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-0 {
-  width: 0px;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-1\/2 {
-  width: 50%;
+.w-5 {
+  width: 1.25rem;
 }
 
 .flex-col {
@@ -681,11 +681,6 @@ video {
   background-color: rgb(49 0 71 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-purple-2 {
   --tw-bg-opacity: 1;
   background-color: rgb(102 0 148 / var(--tw-bg-opacity));
@@ -696,10 +691,6 @@ video {
   background-color: rgb(150 20 208 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  object-fit: cover;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -708,9 +699,8 @@ video {
   text-align: center;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-4xl {
@@ -718,12 +708,17 @@ video {
   line-height: 2.5rem;
 }
 
-.font-semibold {
-  font-weight: 600;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .italic {
@@ -735,19 +730,31 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 @font-face {
   font-family: 'tormenta';
 
   src: url("/Tormenta.ttf");
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
